@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from 'react-router-dom';
-import Sidebar from './Sidebar';
-import Header from './Header';
+import Sidebar from './sidebar';
+import Header from './header';
 import { Toaster } from 'react-hot-toast';
 
 const pageMeta = {
