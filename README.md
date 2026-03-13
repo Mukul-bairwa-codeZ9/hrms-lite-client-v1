@@ -1,16 +1,45 @@
-# React + Vite
+# HRMS Lite — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Production-ready frontend for HRMS Lite built with React and Vite.
 
-Currently, two official plugins are available:
+## Live Demo
+https://hrms-lite-client-v1-jdt25et00-mukul-bairwa-codez9s-projects.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React 18 + Vite
+- Tailwind CSS v3
+- shadcn/ui + Radix UI
+- React Router DOM v6
+- Axios
+- React Hot Toast
+- Deployed on Vercel
 
-## React Compiler
+## Features
+- ✅ Employee Management — Add, View, Delete
+- ✅ Attendance Tracking — Mark Present/Absent
+- ✅ Filter by employee and date range
+- ✅ Dashboard with today's summary stats
+- ✅ Total present days per employee
+- ✅ Loading, empty and error states
+- ✅ Form validation with error messages
+- ✅ Toast notifications
+- ✅ Dark theme UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run Locally
+```bash
+git clone https://github.com/Mukul-bairwa-codeZ9/hrms-lite-client-v1.git
+cd hrms-lite-client-v1
+npm install
+cp .env.example .env
+# Add backend URL to .env
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Environment Variables
+```
+VITE_API_URL=http://localhost:5000/api
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Assumptions
+- Single admin user — no authentication
+- Backend on Render free tier — first load may take 30-50 seconds
